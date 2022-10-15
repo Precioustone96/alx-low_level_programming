@@ -1,28 +1,29 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-
 /**
- * main - my function for randon number assignment to n starts here
- * Return: - expected output is 0
+ * main - start point
+ * Return: gives  0 as  correct output
  */
-int main(void)
-{
+	int main(void)
+	{
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n > 0)
+	if (n == 0)
 	{
-	printf("%d is positive\n", n);
+	printf("%i is zero\n", n);
 	}
-	else if  (n == 0)
+
+	else if (n < 0)
 	{
-	printf("%d is zero\n")
+
+	printf("%i is negative\n", n);
+
 	}
+
 	else
 	{
-	printf("%d is negative\n")
+	printf("%i is positive\n", n);
 	}
 	return (0);
+	}
 }
