@@ -1,3 +1,9 @@
+#include <stdlib.h>
+
+#include <time.h>
+
+#include <stdio.h>
+
 /**
  * main - start point
  * Return: gives  0 as  correct output
@@ -15,9 +21,7 @@
 
 	else if (n < 0)
 	{
-
 	printf("%i is negative\n", n);
-
 	}
 
 	else
@@ -26,4 +30,3 @@
 	}
 	return (0);
 	}
-}
